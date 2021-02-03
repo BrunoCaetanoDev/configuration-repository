@@ -1,7 +1,3 @@
-application-name: @project.artifactId@
-application-description: @project.description@
-application-version: @project.version@
-
 server:
   port: 8080
 
