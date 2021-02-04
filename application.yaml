@@ -37,15 +37,15 @@ springdoc:
   swagger-ui:
     path: "/"
 
-management:
-  endpoint:
-    health:
-      show-details: always
-    env:
-      post:
-        enabled:true
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
+#management:
+#  endpoint:
+#    health:
+#      show-details: always
+#    env:
+#      post:
+#        enabled:true
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
