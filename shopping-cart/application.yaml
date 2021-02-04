@@ -16,4 +16,3 @@ item-storage:
   port: 8080
   api:
     url: http://${item-storage.hostname}:${item-storage.port}
-
