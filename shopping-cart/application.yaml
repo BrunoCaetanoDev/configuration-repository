@@ -1,0 +1,18 @@
+application:
+  name: shopping-cart
+  description: "A small, decoupled, domain-driven and cloud-ready microservice based in Spring Boot that aims to manage various customer shopping carts and items."
+  version: 0.1.0
+
+spring:
+  application:
+    name: shopping-cart
+
+eureka:
+  instance:
+    hostname: shopping-cart  
+
+item-storage:
+  hostname: item-storage
+  port: 8080
+  api:
+    url: http://${item-storage.hostname}:${item-storage.port}
