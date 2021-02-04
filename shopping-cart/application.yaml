@@ -1,5 +1,5 @@
 application:
-  name: shopping-cart
+  name: shopping-carts
   description: "A small, decoupled, domain-driven and cloud-ready microservice based in Spring Boot that aims to manage various customer shopping carts and items."
   version: 0.1.0
 
