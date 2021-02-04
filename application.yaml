@@ -4,48 +4,48 @@ spring:
       client:
         enabled: ${SPRING_BOOT_ADMIN_CLIENT_ENABLED:true}
         url: http://discovery-server:8765
-  cloud:
-    discovery:
-      enabled: ${SPRING_CLOUD_DISCOVERY_ENABLED:true}
-  datasource:
-    url: "jdbc:h2:mem:testdb"
-  h2:
-    console:
-      enabled: true
-      path: /h2-console
-  data:
-    web:
-      pageable:
-        size-parameter: size
-        page-parameter: page
-        default-page-size: 20
-        one-indexed-parameters: false
-        max-page-size: 100
-
-
-eureka:
-  client:
-    registryFetchIntervalSeconds: 5
-    registerWithEureka: true
-    fetchRegistry: true
-    serviceUrl:
-      defaultZone: http://discovery-server:8761/eureka
-
-springdoc:
-  api-docs:
-    path: "/api-docs"
-  swagger-ui:
-    path: "/"
-
-management:
-  endpoint:
-    env:
-      post:
-        enabled:true
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: always
+#  cloud:
+#    discovery:
+#      enabled: ${SPRING_CLOUD_DISCOVERY_ENABLED:true}
+#  datasource:
+#    url: "jdbc:h2:mem:testdb"
+#  h2:
+#    console:
+#      enabled: true
+#      path: /h2-console
+#  data:
+#    web:
+#      pageable:
+#        size-parameter: size
+#        page-parameter: page
+#        default-page-size: 20
+#        one-indexed-parameters: false
+#        max-page-size: 100
+#
+#
+#eureka:
+#  client:
+#    registryFetchIntervalSeconds: 5
+#    registerWithEureka: true
+#    fetchRegistry: true
+#    serviceUrl:
+#      defaultZone: http://discovery-server:8761/eureka
+#
+#springdoc:
+#  api-docs:
+#    path: "/api-docs"
+#  swagger-ui:
+#    path: "/"
+#
+#management:
+#  endpoint:
+#    env:
+#      post:
+#        enabled:true
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+#  endpoint:
+#    health:
+#      show-details: always
