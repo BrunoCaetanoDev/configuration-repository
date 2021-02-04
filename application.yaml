@@ -31,21 +31,21 @@ spring:
 #    serviceUrl:
 #      defaultZone: http://discovery-server:8761/eureka
 #
-#springdoc:
-#  api-docs:
-#    path: "/api-docs"
-#  swagger-ui:
-#    path: "/"
-#
-#management:
-#  endpoint:
-#    env:
-#      post:
-#        enabled:true
-#  endpoints:
-#    web:
-#      exposure:
-#        include: "*"
-#  endpoint:
-#    health:
-#      show-details: always
+springdoc:
+  api-docs:
+    path: "/api-docs"
+  swagger-ui:
+    path: "/"
+
+management:
+  endpoint:
+    env:
+      post:
+        enabled:true
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
