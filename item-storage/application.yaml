@@ -1,0 +1,12 @@
+application:
+  name: item-storage
+  description: "A small, decoupled and domain-driven cloud-ready microservice based in SpringBoot that aims to manage a product catalogue and storage facility."
+  version: 0.1.0
+
+spring:
+  application:
+    name: item-storage
+
+eureka:
+  instance:
+    hostname: item-storage
