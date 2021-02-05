@@ -21,7 +21,12 @@ spring:
         default-page-size: 20
         one-indexed-parameters: false
         max-page-size: 100
-
+  sleuth:
+    log:
+      slf4j:
+        whitelisted-mdc-keys: operation
+    baggage-keys: operation
+    
 
 eureka:
   client:
