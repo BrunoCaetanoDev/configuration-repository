@@ -21,8 +21,11 @@ spring:
         default-page-size: 20
         one-indexed-parameters: false
         max-page-size: 100
-
-
+  sleuth:
+    sampler:
+      percentage: 1.0
+  zipkin:
+    baseUrl: http://tracer-server:9411/
 eureka:
   client:
     registryFetchIntervalSeconds: 5
