@@ -22,10 +22,15 @@ spring:
         one-indexed-parameters: false
         max-page-size: 100
   sleuth:
+    log:
+      slf4j:
+        whitelisted-mdc-keys: operation
+    baggage-keys: operation
     sampler:
       probability: 1.0
   zipkin:
-    base-url: http://tracer-server:9411/
+    base-url: http://tracer-server:9411/    
+
 eureka:
   client:
     registryFetchIntervalSeconds: 5
