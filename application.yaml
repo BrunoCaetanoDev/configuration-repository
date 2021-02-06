@@ -26,7 +26,10 @@ spring:
       slf4j:
         whitelisted-mdc-keys: operation
     baggage-keys: operation
-    
+    sampler:
+      probability: 1.0
+  zipkin:
+    base-url: http://tracer-server:9411/    
 
 eureka:
   client:
