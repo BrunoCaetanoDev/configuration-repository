@@ -23,7 +23,7 @@ spring:
         max-page-size: 100
   sleuth:
     sampler:
-      percentage: 1.0
+      probability: 1.0
   zipkin:
     baseUrl: http://tracer-server:9411/
 eureka:
